@@ -1,10 +1,10 @@
 import { Negociacoes } from "../models/negociacoes.js";
-import { Negociacao } from './../models/negociacao';
+import { Negociacao } from './../models/negociacao.js';
 import { View } from "./view.js";
 
 export class NegociacoesView extends View<Negociacoes> {
 
-    template(models: Negociacoes): string {
+    protected template(models: Negociacoes): string {
         return `
         <table class="table table-hover table-bordered">
             <thead>
